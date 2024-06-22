@@ -35,13 +35,13 @@
                  web, mobile and news.  'web" Sitemap is default. 
                  (Example: sitemap_type="news")
 -->
- <site
+<!--
+<site
   base_url="http://recomb2023.bilkent.edu.tr/"
-  store_into="/home/calkan/angarya/RECOMB23/web/recomb2023/sitemap.xml"
   verbose="1"
   sitemap_type="web"
  >
- 
+--> 
  <!--
  <site
   base_url="http://www.example.com/"
