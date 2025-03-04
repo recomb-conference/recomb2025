@@ -190,9 +190,35 @@
       
     </div>
   </div>
-  
+
   <style>
-  
+h1, h2, h3 {
+    color: #2c3e50;
+}
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+.schedule-table .time-col {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    white-space: nowrap; /* Prevents time from splitting */
+    min-width: 120px; /* Ensures enough space for time range */
+}
+.schedule-table .event-col, .schedule-table .details-col {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+.schedule-table .header-row {
+    background-color: #f2f2f2;
+}
+.session {
+    margin-top: 20px;
+}
+	  
   @media (max-width: 600px) {
       .responsive-heading {
         /* font-size: 1.17em; Same size as h3 */
@@ -394,8 +420,121 @@
         
         <hr> 
         <h2>Programs</h2> <br />	
-        <p style="margin-left: .5em; ">To be announced; will include Keynotes, Highlights, Papers, and Lightning talks, as well as Posters.<br />
-        
+        <p style="margin-left: .5em; ">Tentative; the final version will include Keynotes, Highlights, Papers, and Lightning talks, as well as Posters.<br />
+
+    <h2>April 24th, Thursday</h2>
+    <table class="schedule-table">
+        <tr class="header-row"><td class="time-col">Time</td><td class="event-col">Event</td><td class="details-col">Speaker / Details</td></tr>
+        <tr><td class="time-col">8:30-9:30</td><td class="event-col">REGISTRATION</td><td class="details-col">The Commons, Yonsei University</td></tr>
+        <tr><td class="time-col">9:30-9:40</td><td class="event-col">OPENING</td><td class="details-col">Centennial Hall, Yonsei University</td></tr>
+        <tr><td class="time-col">9:40-10:20</td><td class="event-col">KEYNOTE 1: TBA</td><td class="details-col">Nikos C. Kyrpides, Joint Genome Institute, Lawrence Berkeley National Laboratory</td></tr>
+        <tr><td class="time-col">10:20-10:35</td><td class="event-col">COFFEE BREAK</td><td class="details-col"></td></tr>
+    </table>
+
+    <div class="session">
+        <h3>Session 1: Protein and Metabolic Network Analysis in Microbiomes</h3>
+        <table class="schedule-table">
+            <tr class="header-row"><td class="time-col">Time</td><td class="event-col">Event</td><td class="details-col">Speaker / Details</td></tr>
+            <tr><td class="time-col">10:35-11:00</td><td class="event-col">H1: Protein interactions in human pathogens revealed through deep learning</td><td class="details-col">Minkyung Baek, Seoul National University</td></tr>
+            <tr><td class="time-col">11:00-11:25</td><td class="event-col">H2: Identification of key metabolic microbiota from the human microbiome and their correlation with health and disease</td><td class="details-col">Che Ok Jeon, Chung-Ang University</td></tr>
+            <tr><td class="time-col">11:25-11:50</td><td class="event-col">H3: Metabuli: sensitive and specific metagenomic classification via joint analysis of amino acid and DNA</td><td class="details-col">Jaebeom Kim, Seoul National University</td></tr>
+            <tr><td class="time-col">11:50-12:10</td><td class="event-col">P1: Multi-label classification with masked loss for predicting multi-antibiotic resistance in mixed-species MALDI-TOF MS profile</td><td class="details-col">Youngjun Park, Max Planck Institute for Biology of Ageing</td></tr>
+        </table>
+    </div>
+
+    <table class="schedule-table">
+        <tr><td class="time-col">12:10-13:40</td><td class="event-col">Lunch / Poster Viewing</td><td class="details-col"></td></tr>
+        <tr><td class="time-col">13:00-13:30</td><td class="event-col">Lightning Talks</td><td class="details-col"></td></tr>
+        <tr><td class="time-col">13:40-14:20</td><td class="event-col">KEYNOTE 2: TBA</td><td class="details-col">Jingyuan Fu, University Medical Center Groningen</td></tr>
+    </table>
+
+    <div class="session">
+        <h3>Session 2: Metagenomics Data Analysis and Applications</h3>
+        <table class="schedule-table">
+            <tr class="header-row"><td class="time-col">Time</td><td class="event-col">Event</td><td class="details-col">Speaker / Details</td></tr>
+            <tr><td class="time-col">14:20-14:45</td><td class="event-col">H4: High-quality genomic catalogs of the human microbiome for the era of microbiome medicine</td><td class="details-col">Insuk Lee, Yonsei University</td></tr>
+            <tr><td class="time-col">14:45-15:10</td><td class="event-col">H5: TBA</td><td class="details-col">Takuji Yamada, Tokyo Institute of Technology</td></tr>
+            <tr><td class="time-col">15:10-15:30</td><td class="event-col">P2: Ensemble Expectation-Maximization enables accurate and lightweight taxonomic profiling of long read sequenced metagenomes</td><td class="details-col">Nick Sapoval, Rice University</td></tr>
+            <tr><td class="time-col">15:30-15:50</td><td class="event-col">P3: Dynamic contrastive learning with pretrained deep language model enhances metagenome binning for contigs</td><td class="details-col">Bohao Zou, Hong Kong Baptist University</td></tr>
+        </table>
+    </div>
+
+    <table class="schedule-table">
+        <tr><td class="time-col">15:50-16:10</td><td class="event-col">COFFEE BREAK</td><td class="details-col"></td></tr>
+    </table>
+
+    <div class="session">
+        <h3>Session 3: Core Microbiome and Health Correlations</h3>
+        <table class="schedule-table">
+            <tr class="header-row"><td class="time-col">Time</td><td class="event-col">Event</td><td class="details-col">Speaker / Details</td></tr>
+            <tr><td class="time-col">16:10-16:35</td><td class="event-col">H6: Relational stability for identifying core members in microbiomes</td><td class="details-col">Liping Zhao, Rutgers University</td></tr>
+            <tr><td class="time-col">16:35-17:00</td><td class="event-col">H7: Understanding the human microbiome through multi-omics analysis from an ecological perspective</td><td class="details-col">Bong-Soo Kim, Ewha Womans University</td></tr>
+            <tr><td class="time-col">17:00-17:25</td><td class="event-col">H8: mi-Mic: a novel multi-layer statistical test for microbiota-disease associations</td><td class="details-col">Yoram Louzoun, Bar-Ilan University</td></tr>
+            <tr><td class="time-col">17:25-17:50</td><td class="event-col">H9: Microbiome confounders and quantitative profiling challenge predicted microbial targets in colorectal cancer development</td><td class="details-col">Raul Tito Tadeo, KU Leuven</td></tr>
+        </table>
+    </div>
+
+    <table class="schedule-table">
+        <tr><td class="time-col">18:00-20:00</td><td class="event-col">POSTER SESSION / SATELLITES RECEPTION</td><td class="details-col"></td></tr>
+    </table>
+
+    <h2>April 25th, Friday</h2>
+    <table class="schedule-table">
+        <tr class="header-row"><td class="time-col">Time</td><td class="event-col">Event</td><td class="details-col">Speaker / Details</td></tr>
+        <tr><td class="time-col">8:30-9:30</td><td class="event-col">REGISTRATION</td><td class="details-col">The Commons, Yonsei University / Centennial Hall, Yonsei University</td></tr>
+    </table>
+    <div class="session">
+        <h3>Session 4: Computational Tools and Algorithms for Microbiome Analysis</h3>
+        <table class="schedule-table">
+            <tr class="header-row"><td class="time-col">Time</td><td class="event-col">Event</td><td class="details-col">Speaker / Details</td></tr>
+            <tr><td class="time-col">09:30-09:55</td><td class="event-col">H10: Processing-bias correction with DEBIAS-M and implications for analyzing the microbiome in cancer</td><td class="details-col">Tal Korem, Columbia University</td></tr>
+            <tr><td class="time-col">9:55-10:20</td><td class="event-col">H11: Rapid species-level metagenome profiling and containment estimation with sylph</td><td class="details-col">Jim Shaw, Dana-Farber Cancer Institute, Harvard Medical School</td></tr>
+            <tr><td class="time-col">10:20-10:40</td><td class="event-col">P4: Gaia: A context-aware sequence search and discovery tool for microbial proteins</td><td class="details-col">Yunha Hwang, Tatta Bio</td></tr>
+            <tr><td class="time-col">10:40-11:00</td><td class="event-col">P5: Using lossless compression algorithms to improve metagenomics binning and accelerate genome taxonomic classification</td><td class="details-col">Ital Sharon, MIGAL-Galilee Research Institute</td></tr>
+            <tr><td class="time-col">11:00-11:20</td><td class="event-col">P6: CAMP: A modular metagenomics analysis system for integrated multi-step data exploration</td><td class="details-col">Lauren Mak, Weill Cornell Medicine</td></tr>
+        </table>
+    </div>
+
+    <table class="schedule-table">
+        <tr><td class="time-col">11:20-11:35</td><td class="event-col">COFFEE BREAK</td><td class="details-col"></td></tr>
+        <tr><td class="time-col">11:35-12:15</td><td class="event-col">KEYNOTE 3: TBA</td><td class="details-col">Curtis Huttenhower, Harvard University</td></tr>
+        <tr><td class="time-col">12:15-14:15</td><td class="event-col">Lunch / Poster Viewing</td><td class="details-col"></td></tr>
+        <tr><td class="time-col">13:35-14:05</td><td class="event-col">Lightning Talks</td><td class="details-col"></td></tr>
+    </table>
+
+    <div class="session">
+        <h3>Session 5: Human Microbiome Studies</h3>
+        <table class="schedule-table">
+            <tr class="header-row"><td class="time-col">Time</td><td class="event-col">Event</td><td class="details-col">Speaker / Details</td></tr>
+            <tr><td class="time-col">14:15-14:40</td><td class="event-col">H12: Gut microbiome report to prognosticate liver diseases</td><td class="details-col">Ki Tae Suk, Hallym University Medical Center</td></tr>
+            <tr><td class="time-col">14:40-15:05</td><td class="event-col">H13: Gut microbiota in IBS: Pathogenic insights and FMT-based therapeutics</td><td class="details-col">Qi Su, The Chinese University of Hong Kong</td></tr>
+            <tr><td class="time-col">15:05-15:30</td><td class="event-col">H14: Microbial network inference for longitudinal microbiome studies with LUPINE</td><td class="details-col">Saritha Kodikara, The University of Melbourne</td></tr>
+            <tr><td class="time-col">15:30-15:50</td><td class="event-col">P7: Longitudinal oropharyngeal microbial signatures in patients undergoing Allogeneic Hematopoietic Stem Cell Transplantation</td><td class="details-col">Yan Yan, Shanghai Institute of Immunity and Infection, Chinese Academy of Sciences (CAS)</td></tr>
+        </table>
+    </div>
+
+    <table class="schedule-table">
+        <tr><td class="time-col">15:50-16:10</td><td class="event-col">COFFEE BREAK</td><td class="details-col"></td></tr>
+    </table>
+
+    <div class="session">
+        <h3>Session 6: Environmental Microbiome Responses</h3>
+        <table class="schedule-table">
+            <tr class="header-row"><td class="time-col">Time</td><td class="event-col">Event</td><td class="details-col">Speaker / Details</td></tr>
+            <tr><td class="time-col">16:10-16:35</td><td class="event-col">H15: Viral ecology and evolution in a freshwater lake over three decades</td><td class="details-col">Karthik Anantharaman, University of Wisconsin-Madison</td></tr>
+            <tr><td class="time-col">16:35-17:00</td><td class="event-col">H16: Bovine gut microbiome: Effect of castration and fecal microbiota transplantation</td><td class="details-col">Jin-Woo Bae, Kyung Hee University</td></tr>
+            <tr><td class="time-col">17:00-17:20</td><td class="event-col">P8: A shift from heterotrophy to autotrophy underlies microbial adaptation to global desert ecosystems</td><td class="details-col">Pok Man Leung, Monash University</td></tr>
+            <tr><td class="time-col">17:20-17:40</td><td class="event-col">P9: Functional regimes define the response of the soil microbiome to environmental change</td><td class="details-col">Kiseok Keith Lee, University of Chicago</td></tr>
+        </table>
+    </div>
+
+    <h3>Closing Remarks</h3>
+    <p><strong>Legend:</strong><br>
+        * K: Keynote Talk<br>
+        * H: Highlight Talk<br>
+        * P: Paper Talk
+    </p>
+
         <hr> 
         <h2>Topics of Interest (including but not limited to)</h2> <br />	
           
