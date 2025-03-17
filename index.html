@@ -218,12 +218,15 @@
     <script>
         // Function to set a cookie for 1 day
         function setCookie() {
-            if (document.getElementById("dontShowOneDay").checked) {
+	    let dontShow = document.getElementById("dontShowOneDay").checked;
+            if (dontShow) {
                 let date = new Date();
                 date.setTime(date.getTime() + (24 * 60 * 60 * 1000)); // 1 day
                 document.cookie = "popupDismissed=true; expires=" + date.toUTCString() + "; path=/";
+            } else {
+                // If unchecked, set a cookie with a past expiration to "delete" it
+                document.cookie = "popupDismissed=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/";
             }
-            closePopup();
         }
 
         // Function to check if cookie exists
@@ -238,12 +241,13 @@
             document.getElementById("myPopup").style.display = "block";
         }
 
-        // Function to close the pop-up
+	// Function to close the pop-up and set cookie based on checkbox
         function closePopup() {
+            setCookie(); // Set cookie based on checkbox state when closing
             document.getElementById("myPopup").style.display = "none";
         }
 
-        // Check cookie and open pop-up on page load if not dismissed
+        // Open pop-up on page load if cookie not set
         window.onload = function() {
             if (!getCookie("popupDismissed")) {
                 openPopup();
