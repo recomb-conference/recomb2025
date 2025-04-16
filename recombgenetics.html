@@ -150,7 +150,102 @@
 </header>
 <!-- End Fixed Navigation
   ==================================== -->
+  <style>
 
+/* === Global Styles === */
+h1, h2, h3 {
+  color: #003366; /* Deep navy blue */
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+h1 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+  margin-top: 2rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.4rem;
+}
+
+/* === Schedule Structure === */
+.conference-schedule {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+}
+
+.day-schedule {
+  margin-bottom: 3rem;
+  border-left: 4px solid #dbe9f5;
+  padding-left: 1rem;
+}
+
+.session-block {
+  margin-bottom: 1.5rem;
+  padding-left: 1rem;
+  border-left: 3px solid #aaccee;
+}
+
+.session-block p {
+  margin: 0.3rem 0;
+}
+
+/* === Time & Location === */
+time {
+  color: #0050a0;
+  font-weight: 500;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.location {
+  color: #666;
+  font-style: italic;
+  font-size: 0.9em;
+  margin-left: 0.3rem;
+}
+
+/* === Breaks === */
+.break {
+  font-style: italic;
+  color: #777;
+  margin: 0.8rem 0;
+  padding-left: 1rem;
+}
+
+/* === Talk Codes (K1, H2, etc.) === */
+strong {
+  color: #003366;
+}
+
+/* === Responsive Tweaks === */
+@media (max-width: 600px) {
+  .conference-schedule {
+    margin: 1rem;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  time {
+    display: block;
+    margin-bottom: 0.2rem;
+  }
+}
+  </style>
+	
 <section class="single-page-header">
 	<div class="container">
 		<div class="row">
