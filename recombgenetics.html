@@ -268,50 +268,147 @@ strong {
 	
 </table>
 <hr>			
-<section class="conference-schedule">
-  <h2>Program</h2>
-<hr>	
-  <article class="day-schedule">
-    <div class="session-block">
-      <p><time>09:00 - 09:30</time> — <strong>Breakfast</strong></p>
-      <p><time>09:30 - 10:30</time> — <strong>Keynote Talk</strong><br>
-        Speaker: Vicky Yao
-      </p>
-      <p class="break">10:30 - 11:00 — Coffee Break</p>
+
+<section class="program section" id="program">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12">
+        <hr>
+        <h2>Program</h2>
+        <hr>
+
+        <div class="row">
+          <div class="col-md-3 col-sm-3 col-xs-3 col-4"><p class="time">09:00 - 09:30</p></div>
+          <div class="col-md-9 col-sm-9 col-xs-9 col-8"><p class="activity">Breakfast</p></div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-3 col-sm-3 col-xs-3 col-4"><p class="time">09:30 - 10:30</p></div>
+          <div class="col-md-9 col-sm-9 col-xs-9 col-8">
+            <p class="invited-speaker">Vicky Yao</p>
+            <button type="button" class="btn-keynote" data-toggle="collapse" data-target="#keynote1">Keynote Talk</button>
+            <div id="keynote1" class="collapse show">
+              <p class="text">
+                <b>TBD</b>
+                <br><br>
+                <button class="btn-abstract" data-toggle="collapse" data-target="#collapsek1"><i class="fas fa-pencil-alt" aria-hidden="true"></i>Abstract</button>
+                <div class="collapse" id="collapsek1">
+                  <p class="text">
+                    TBD
+                  </p>
+                </div>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-3 col-sm-3 col-xs-3 col-4"><p class="time">10:30 - 11:00</p></div>
+          <div class="col-md-9 col-sm-9 col-xs-9 col-8"><p class="activity">Coffee Break</p></div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-3 col-sm-3 col-xs-3 col-4"><p class="time">11:00 - 12:00</p></div>
+          <div class="col-md-9 col-sm-9 col-xs-9 col-8">
+            <button type="button" class="btn" data-toggle="collapse" aria-expanded="true" data-target="#session1">Session 1</button>
+            <div id="session1" class="collapse show">
+              <p class="text">
+                <b>[PT] Integrates prior knowledge using transformer for gene regulatory network inference</b>
+                <br>
+                <i>Guangzheng Weng, Patrick Martin, Hyobin Kim and Kyoung Jae Won</i>
+              </p>
+              <hr>
+              <p class="text">
+                <b>[PT] CACTI: Leveraging Copy Masking and Contextual Information to Improve Biobank Imputation</b>
+                <br>
+                <i>Aditya Gorla, Ryan Wang, Zhengtong Liu, Ulzee An and Sriram Sankararaman</i>
+              </p>
+              <hr>
+              <p class="text">
+                <b>[Poster] Redefining identity by descent segments in ancestry recombination graphs and an efficient algorithm for finding them</b>
+                <br>
+                <i>Yuan Wei, Ahsan Sanaullah, Degui Zhi and Shaojie Zhang</i>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-3 col-sm-3 col-xs-3 col-4"><p class="time">12:00 - 13:30</p></div>
+          <div class="col-md-9 col-sm-9 col-xs-9 col-8"><p class="activity">Lunch Break</p></div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-3 col-sm-3 col-xs-3 col-4"><p class="time">13:30 - 14:30</p></div>
+          <div class="col-md-9 col-sm-9 col-xs-9 col-8">
+            <button type="button" class="btn" data-toggle="collapse" aria-expanded="true" data-target="#session2">Session 2</button>
+            <div id="session2" class="collapse show">
+              <p class="text">
+                <b>[PT] A unified burden and overdispersion framework for Bayesian functionally informed rare variant association testing</b>
+                <br>
+                <i>Anjali Das, Chirag Lakhani, Towfique Raj and David A. Knowles</i>
+              </p>
+              <hr>
+              <p class="text">
+                <b>[PT] Train-free unsupervised volumetric embeddings using image foundation models enable improved predictions and genomic discoveries</b>
+                <br>
+                <i>Ulzee An, Moonseong Jeong, Simon Lee, Aditya Gorla and Sriram Sankararaman</i>
+              </p>
+              <hr>
+              <p class="text">
+                <b>[Poster] An atlas of transcribed gene regulatory elements of human skeletal muscle</b>
+                <br>
+                <i>Andrey Buyan, Vladimir Nozdrin, Guzel Gazizova, Georgy Meshcheryakov, Yoshihide Hayashizaki, Elena Shagimardanova, Oleg Gusev and Ivan Kulakovskiy</i>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-3 col-sm-3 col-xs-3 col-4"><p class="time">14:30 - 15:30</p></div>
+          <div class="col-md-9 col-sm-9 col-xs-9 col-8"><p class="activity">Lightning Poster Talks</p></div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-3 col-sm-3 col-xs-3 col-4"><p class="time">15:30 - 16:00</p></div>
+          <div class="col-md-9 col-sm-9 col-xs-9 col-8"><p class="activity">Coffee Break</p></div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-3 col-sm-3 col-xs-3 col-4"><p class="time">16:00 - 17:00</p></div>
+          <div class="col-md-9 col-sm-9 col-xs-9 col-8">
+            <button type="button" class="btn" data-toggle="collapse" aria-expanded="true" data-target="#session3">Session 3</button>
+            <div id="session3" class="collapse show">
+              <p class="text">
+                <b>[PT] Longitudinal Lipidomics Strengthens Genetic Risk Prediction of Alzheimer’s Disease</b>
+                <br>
+                <i>Erica H. Suh, Sophie K. Kearney, Kwangsik Nho, Andrew J. Saykin, Yonghyun Nam and Dokyoon Kim</i>
+              </p>
+              <hr>
+              <p class="text">
+                <b>[PT] Genetic analysis of retinal foundation model embeddings links morphology to ocular disease risk</b>
+                <br>
+                <i>Liubov Shilova, Daniel Sens, Shubham Chaudhary, Ayellet V Segrè, Julia A Schnabel, Bjoern Eskofier and Francesco Paolo Casale</i>
+              </p>
+              <hr>
+              <p class="text">
+                <b>[Poster] DisCO-VG: Disease-specific optimization method for prioritizing variant-target gene pairs</b>
+                <br>
+                <i>Elysia Chou, Andre Guerra, Shiting Li, Tingting Qin, Kai Wang, Zhaolin Zhang, James T. Elder, Lam C. Tsoi and Maureen A. Sartor</i>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-3 col-sm-3 col-xs-3 col-4"><p class="time">17:00 - 19:30</p></div>
+          <div class="col-md-9 col-sm-9 col-xs-9 col-8"><p class="activity">Poster Session</p></div>
+        </div>
+
+        *Time Zone: KST
+      </div>
     </div>
-
-    <div class="session-block">
-      <h3>Session 1</h3>
-
-      <p><time>11:00 - 11:20</time> — <strong>Paper Talk</strong><br>
-      <strong>Title:</strong> Integrates prior knowledge using transformer for disease gene prioritization<br>
-      <strong>Authors:</strong> Guangzheng Weng, Patrick Martin, Hyobin Kim and Peter Koo</p>
-
-      <p><time>11:20 - 11:40</time> — <strong>Paper Talk</strong><br>
-      <strong>Title:</strong> CACTI: Leveraging Copy Masking and Contextual Integrity for Enhancing Imputation in Low-pass Sequencing<br>
-      <strong>Authors:</strong> Aditya Gorla, Ryan Wang, Zhengtong Liu, Ulzee An and Bogdan Pasaniuc</p>
-
-      <p><time>11:40 - 12:00</time> — <strong>Poster Talk</strong><br>
-      <strong>Title:</strong> Redefining identity by descent segments in ancient and modern genomes<br>
-      <strong>Authors:</strong> Yuan Wei, Ahsan Sanaullah, Degui Zhi and Shaojie Zhang</p>
-    </div>
-
-    <p class="break">12:00 - 13:30 — Lunch Break</p>
-
-    <div class="session-block">
-      <h3>Session 2</h3>
-
-      <p><time>13:30 - 13:50</time> — <strong>Paper Talk</strong><br>
-      <strong>Title:</strong> A unified burden and overdispersion framework for population stratified rare variant association studies<br>
-      <strong>Authors:</strong> Anjali Das, Chirag Lakhani, Towfique Raj and Dongwon Lee</p>
-
-      <p><time>13:50 - 14:10</time> — <strong>Paper Talk</strong><br>
-      <strong>Title:</strong> Train-free unsupervised volumetric embeddings for three-dimensional single-cell spatial transcriptomics<br>
-      <strong>Authors:</strong> Ulzee An, Moonseong Jeong, Simon Lee, Aditya Gorla and Jason Ernst</p>
-    </div>
-
-  </article>
-
+  </div>
 </section>
 				
 <hr> 
